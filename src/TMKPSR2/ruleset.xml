@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ruleset name="TMKPSR2">
+ <description>The TMK PSR-2 coding standard.</description>
+ <arg name="tab-width" value="4"/>
+
+ <!-- Include the whole PSR-2 standard -->
+ <rule ref="PSR2">
+  <exclude name="PSR2.Classes.ClassDeclaration"/>
+  <exclude name="PSR2.Methods.FunctionClosingBrace"/>
+ </rule>
+
+ <rule ref="TMKPSR2.Methods.FunctionClosingBrace"/>
+
+ <!-- The soft limit on line length MUST be 160 characters; automated style checkers MUST warn but MUST NOT error at the soft limit. -->
+ <rule ref="Generic.Files.LineLength">
+  <properties>
+   <property name="lineLimit" value="160"/>
+   <property name="absoluteLineLimit" value="0"/>
+  </properties>
+ </rule>
+
+ </ruleset>
