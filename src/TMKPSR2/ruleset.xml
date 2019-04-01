@@ -21,4 +21,9 @@
   </properties>
  </rule>
 
+ <!-- Disable Internal.NoCodeFound warning -->
+ <rule ref="Internal.NoCodeFound">
+  <severity>0</severity>
+ </rule>
+
 </ruleset>
