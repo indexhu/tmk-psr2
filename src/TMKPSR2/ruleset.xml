@@ -26,4 +26,8 @@
   <severity>0</severity>
  </rule>
 
+ <!-- Disable 'End of line character is invalid' warning -->
+ <rule ref="Generic.Files.LineEndings">
+  <severity>0</severity>
+ </rule>
 </ruleset>
